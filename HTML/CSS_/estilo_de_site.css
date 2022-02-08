@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+p {font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/*Formatação para Imagens*/
+figure.imagem_hulk {
+    position: relative; /*esse servirá como referencia para outros absolutos oriundos dessa classe*/
+    border: 4px solid rgb(63, 63, 63);
+
+}
+img{
+    /*Aqui são definidas a porcetagem em que o redimensionamento acompanhará o navegador*/
+    width: 100%;
+    height: 100%;
+}
+/*Formatar texto do figcaption*/
+figure.imagem_hulk figcaption h1{
+    font-family: Arial, Helvetica, sans-serif
+    font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+figure.imagem_hulk figcaption p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    }
+figure.imagem_hulk figcaption {    
+    top: 0px; /*define o topo*/
+    position: absolute; /*posição abosoluta em relação ao um conteinar, se nada for selecionado ele irá colocar em relaçã ao documento como um todo*/
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+figure.imagem_hulk:hover figcaption{ /*o hover é uma ação que muda a formatação quando a ação "mouse passar em cima for acionada"*/
+    /*aqui o que será alterado herdando a formação anterior*/
+    opacity: 1;
+
+}
