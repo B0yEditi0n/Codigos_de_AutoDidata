@@ -11,3 +11,4 @@
 `git add ArquivoEditado` para adicionar modificados ou editados na fila de upload
 `git commit -m "Comentário"` aqui será inserido um comentario
 `git push` tudo o que foi alterado agora será upado
+Nota; Token agora é a senha
