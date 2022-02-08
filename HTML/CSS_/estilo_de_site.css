@@ -15,23 +15,29 @@ img{
     width: 100%;
     height: 100%;
 }
+figure.imagem_hulk figcaption { 
+    position: absolute; /*posição abosoluta em relação ao um conteinar, se nada for selecionado ele irá colocar em relaçã ao documento como um todo*/
+    top: 0px; /*define o topo*/
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    /*a estrutura de transição é parametro de transição e o tempo*/
+}
 /*Formatar texto do figcaption*/
 figure.imagem_hulk figcaption h1{
     font-family: Arial, Helvetica, sans-serif
     font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
 }
 figure.imagem_hulk figcaption p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: bold;
-    font-size: 30px;
+    font-size: 20px;
     }
-figure.imagem_hulk figcaption {    
-    top: 0px; /*define o topo*/
-    position: absolute; /*posição abosoluta em relação ao um conteinar, se nada for selecionado ele irá colocar em relaçã ao documento como um todo*/
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-}
+
 
 figure.imagem_hulk:hover figcaption{ /*o hover é uma ação que muda a formatação quando a ação "mouse passar em cima for acionada"*/
     /*aqui o que será alterado herdando a formação anterior*/
