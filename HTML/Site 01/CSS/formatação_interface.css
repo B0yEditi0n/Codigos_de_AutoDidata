@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Gotham";
+    src: url(fontes/GothamMedium.ttf) format(truetype);
+
+    font-family: "Gotham-Bold";
+    src: url(fontes/GothamBold.ttf);
+}
+
+div#interface {
+    /*Delimitação de Largura do Ploco para Positon*/    
+    width: 800px;
+    /*Há uma diferençã entre posição relativa e abosoluta, posições relativas seguem um padrão de um bloco. Enquanto
+    Absolutas seguem a pagina inteira como bloco*/
+}
+nav#barra_navegação {
+    display: block; /*Transforma A Barr UL em um bloco*/
+    
+}
+nav#barra_navegação ul{
+    list-style: none; /*some com os marcadores Bullet*/
+    text-transform: uppercase; /*deixa todas a letras em maiuscula*/
+
+    /*aqui são configurações de menu para movimentação do bloco*/
+    position: absolute;
+    top: -19px; /*posição vertical*/
+    left: 700px; /*posição Horizontal*/
+}
+
+nav#barra_navegação li{
+    background-color: rgba(155, 155, 155, 0.494);    
+    display: inline-block; /*Torna Listas uma ao lado da outra*/
+    padding: 10px; /*cria um espaço dentro das caixas*/
+    margin: 3px; /*cria um espaço fora da*/    
+    transition: 1s;
+}
+nav#barra_navegação li:hover{ /*Formatação hover diz respeito a um efeito quando o mouse for usado*/
+    background-color: rgb(39, 39, 39);
+}
+nav#barra_navegação a{
+    font-family: "Gotham-Bold";
+    color: black;
+    text-decoration: none; /*Sem sublinhado*/
+}
+nav#barra_navegação a:hover{    
+    color: white;
+    text-decoration: underline;
+}
