@@ -47,3 +47,14 @@ nav#barra_navegação a:hover{
     color: white;
     text-decoration: underline;
 }
+
+/*Formatação da Interface Principal*/
+body{
+    background-color: white;
+}
+div#Interface {
+    background-color: #dddddd;
+    width: 600px; /*limite do tamanho da interface*/
+    margin: 10px auto 10px auto; /*a ordem da margem é cima; direita; baixo; esquerda*/
+    /*caso utilize "auto" o navegador centraliza automativamente deixando o centralizado*/
+}
