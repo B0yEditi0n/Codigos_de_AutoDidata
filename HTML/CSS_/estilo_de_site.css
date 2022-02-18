@@ -42,5 +42,39 @@ figure.imagem_hulk figcaption p{
 figure.imagem_hulk:hover figcaption{ /*o hover é uma ação que muda a formatação quando a ação "mouse passar em cima for acionada"*/
     /*aqui o que será alterado herdando a formação anterior*/
     opacity: 1;
+}
 
+/*configurações do Menu*/
+
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;   
+    position: absolute;
+    top: -12px;
+    left: 400px;
+}
+nav#menu li{    
+    text-transform: uppercase;
+    display: inline;
+    background-color: black;
+    padding: 6px;
+    margin: 2px;
+    
+}
+nav#menu li:hover{
+    background-color: rgba(130, 130, 130, 0.5);
+    transition: 1s;
+}
+nav#menu a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-decoration: none;
+    
+}
+nav#menu a:hover{
+    text-decoration: underline;
+    color: black;
+    transition: 1s;
 }

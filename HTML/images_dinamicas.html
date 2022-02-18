@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Imagem Dinamica</title>
+</head>
+<body>
+    <div>
+        <!--Será que não tem como reaproveitar isso?-->
+        <nav id="menu">
+            <ul>
+                <li><a href="Imagens.html">Metodo 1</a></li>
+                <li><a href="images_dinamicas.html">Outro Metodo</a></li>
+    
+            </ul>
+        </nav>
+    
+        <!--Redimensionado imagens de acordo com o padrão da tela-->
+        <h1 style="font-family: Arial, Helvetica, sans-serif; size: 10px;">Imagem de Redimensionado</h1>
+        <p>Experimente redimensionar esta pagina</p>
+        <picture>
+            <!--Este conmando irá controlar por meio de min-width ou max-width o tamanho de pixel e
+            o tamanho da imagem para redimensiona-lo-->
+
+            <!--é muito importante manter a ordem se for por Máximo as imagens deve estar em ordem crescentes
+            no caso de minimo em crescente-->
+
+            <source media="(max-width: 600px)" srcset="Imagens_Referências/Image_exemplo_300px.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="Imagens_Referências/Image_exemplo_600px.jpeg" type="image/jpeg"> 
+            <img src="Imagens_Referências/001.jpeg">
+        </picture>
+    </div>    
+</body>
+</html>
