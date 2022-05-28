@@ -4,7 +4,7 @@
 
 ### Autenticação
 `git config --global user.name "User Name"` <br />
-`git config --global user.name "User Email"` <br />
+`git config --global user.email "User Email"` <br />
 
 ### Controle de Dados
 `git status` Aqui serão mostrados aquivos editados ou criado <br />
